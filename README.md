@@ -6,7 +6,7 @@
 
 ## website doc project
 
-* doc template: [rust mdBook](https://github.com/rust-lang/mdBook);
+* doc template: [rust mdBook](https://github.com/rust-lang/mdBook)
 
 ### init
 
@@ -14,6 +14,9 @@
 
 # .../zuo-er-tin-feng
 pwd
+
+# install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # install mdBook
 cargo install mdbook
@@ -38,6 +41,5 @@ mdbook build
 
 ## git workflow
 
-* branch *dev*: 更新内容，提交到远程仓库，然后合并到 *main* 分支;
+* branch *dev*: 更新内容，构建dist产物（cloudflare不支持rust环境，只能本地构建）,提交到远程仓库，然后合并到 *main* 分支;
 * branch *main*: 被保护的分支，只能通过 *dev* 分支合并代码;
-* branch *dist*: 把main分支合到这个分支，用于存放 *mdBook* 生成的静态页面;
