@@ -1,0 +1,12 @@
+[book]
+authors = ["tangzixuan"]
+language = "en"
+src = "src"
+title = "左耳听风"
+
+[build]
+build-dir = "dist"
+create-missing = false
+
+[output.html.search]
+limit-results = 15
