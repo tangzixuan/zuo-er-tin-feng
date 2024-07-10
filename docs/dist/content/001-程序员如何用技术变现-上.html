@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../content/000-开篇词.html"><strong aria-hidden="true">1.</strong> 开篇词</a></li><li class="chapter-item expanded "><a href="../content/001-程序员如何用技术变现-上.html" class="active"><strong aria-hidden="true">2.</strong> 程序员如何用技术变现-上</a></li><li class="chapter-item expanded "><a href="../content/002-程序员如何用技术变现-下.html"><strong aria-hidden="true">3.</strong> 程序员如何用技术变现-下</a></li><li class="chapter-item expanded "><a href="../content/003-Equifax信息泄露始末.html"><strong aria-hidden="true">4.</strong> Equifax信息泄露始末</a></li><li class="chapter-item expanded "><a href="../content/004-从Equifax信息泄露看数据安全.html"><strong aria-hidden="true">5.</strong> 从Equifax信息泄露看数据安全</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../content/000-开篇词.html"><strong aria-hidden="true">1.</strong> 开篇词</a></li><li class="chapter-item expanded "><a href="../content/001-程序员如何用技术变现-上.html" class="active"><strong aria-hidden="true">2.</strong> 程序员如何用技术变现-上</a></li><li class="chapter-item expanded "><a href="../content/002-程序员如何用技术变现-下.html"><strong aria-hidden="true">3.</strong> 程序员如何用技术变现-下</a></li><li class="chapter-item expanded "><a href="../content/003-Equifax信息泄露始末.html"><strong aria-hidden="true">4.</strong> Equifax信息泄露始末</a></li><li class="chapter-item expanded "><a href="../content/004-从Equifax信息泄露看数据安全.html"><strong aria-hidden="true">5.</strong> 从Equifax信息泄露看数据安全</a></li><li class="chapter-item expanded "><a href="../content/005-何为技术领导力.html"><strong aria-hidden="true">6.</strong> 何为技术领导力</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -176,7 +176,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="01--程序员如何用技术变现上"><a class="header" href="#01--程序员如何用技术变现上">01 | 程序员如何用技术变现？（上）</a></h1>
+                        <h1 id="程序员如何用技术变现上"><a class="header" href="#程序员如何用技术变现上">程序员如何用技术变现？（上）</a></h1>
 <p><img src="../img/001/1.png" alt="1" />
 程序员用自己的技术变现，其实是一件天经地义的事儿。写程序是一门“手艺活儿”，那么作为手艺人，程序员当然可以做到靠自己的手艺和技能养活自己。</p>
 <p>然而，现在很多手艺人程序员却说自己是“码农”，编码的农民工，在工作上被各种使唤，各种加班，累得像个牲口。在职业发展上各种迷茫和彷徨，完全看不到未来的希望，更别说可以成为一个手艺人用自己的技能变现了。</p>
@@ -267,6 +267,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
