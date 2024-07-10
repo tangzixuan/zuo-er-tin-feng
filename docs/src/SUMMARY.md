@@ -5,3 +5,4 @@
 - [程序员如何用技术变现-下](./content/002-程序员如何用技术变现-下.md)
 - [Equifax信息泄露始末](./content/003-Equifax信息泄露始末.md)  
 - [从Equifax信息泄露看数据安全](./content/004-从Equifax信息泄露看数据安全.md)  
+- [何为技术领导力](./content/005-何为技术领导力.md)
