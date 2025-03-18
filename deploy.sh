@@ -1,6 +1,10 @@
 # Change to the directory where the script is located
 cd "$(dirname "$0")"
 
+pwd
+
+cd './docs' || exit
+
 # reference: https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/
 mdbook build
 
