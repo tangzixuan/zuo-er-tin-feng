@@ -9,6 +9,8 @@ build-dir = "dist"
 create-missing = false
 
 [output.html]
+additional-css = ["src/custom.css"]
+additional-js = ["src/custom.js"]
 git-repository-url = "https://github.com/tangzixuan/zuo-er-tin-feng"
 
 [output.html.search]
