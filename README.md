@@ -30,16 +30,19 @@ mdbook serve
 
 ```
 
-### build
+### build & deploy
 
 ```sh
 cd ./docs
 
 mdbook build
 
+sh docs/deploy.sh
+
 ```
 
 ## git workflow
 
 * branch *dev*: 更新内容，构建dist产物（cloudflare不支持rust环境，只能本地构建）,提交到远程仓库，然后合并到 *main* 分支;
+  * 避免仓库体积过大，不要提交dist产物，直接本地cloudflare wrangler发布部署；
 * branch *main*: 被保护的分支，只能通过 *dev* 分支合并代码;
